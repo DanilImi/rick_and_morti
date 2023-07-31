@@ -5,6 +5,7 @@ import styles from "./app.module.scss";
 import { Error } from "./components/error/Error";
 
 const App: FC = () => {
+  //success
   const [page, setPage] = useState(1);
   const { data, more, loading, error } = usePagination(page);
   const observer = useRef<IntersectionObserver | null>();
