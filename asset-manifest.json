@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/rick_and_morti/static/css/main.d850979a.css",
-    "main.js": "/rick_and_morti/static/js/main.c16fcab0.js",
+    "main.css": "/rick_and_morti/static/css/main.c0cf02d9.css",
+    "main.js": "/rick_and_morti/static/js/main.8746541a.js",
     "static/js/787.294cda91.chunk.js": "/rick_and_morti/static/js/787.294cda91.chunk.js",
     "index.html": "/rick_and_morti/index.html",
-    "main.d850979a.css.map": "/rick_and_morti/static/css/main.d850979a.css.map",
-    "main.c16fcab0.js.map": "/rick_and_morti/static/js/main.c16fcab0.js.map",
+    "main.c0cf02d9.css.map": "/rick_and_morti/static/css/main.c0cf02d9.css.map",
+    "main.8746541a.js.map": "/rick_and_morti/static/js/main.8746541a.js.map",
     "787.294cda91.chunk.js.map": "/rick_and_morti/static/js/787.294cda91.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d850979a.css",
-    "static/js/main.c16fcab0.js"
+    "static/css/main.c0cf02d9.css",
+    "static/js/main.8746541a.js"
   ]
 }
