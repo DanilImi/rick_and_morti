@@ -33,7 +33,24 @@
   overflow: hidden;
   border-radius: 16px;
 }
-
+.image-container {
+  position: relative;
+}
+.image-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  z-index: 1;
+}
 .heading {
   margin: 0;
   padding: 10px;
@@ -101,5 +118,23 @@
   font-size: 12px;
   > span {
     font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .modal {
+    width: 300px;
+    height: 600px;
+  }
+  .modalHeader {
+    flex-direction: column;
+  }
+  .image-container::before {
+    top: 21px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    );
   }
 }

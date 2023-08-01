@@ -8,13 +8,15 @@ interface ISetIsOpen {
 }
 export const Modal: FC<ISetIsOpen> = ({ setIsOpen, data }) => {
   const { image, species, status, name, gender, location, origin } = data;
+  const { name: originName } = origin;
+  const { name: locationName } = location;
   return (
     <>
-      <div className={styles.darkBG} onClick={() => setIsOpen(false)}>
+      <div className={styles.darkBG}>
         <div className={styles.centered}>
           <div className={styles.modal}>
             <div className={styles.modalHeader}>
-              <div>
+              <div className={styles["image-container"]}>
                 <img src={image} alt="icon" />
               </div>
               <div className={styles.container}>
@@ -35,11 +37,11 @@ export const Modal: FC<ISetIsOpen> = ({ setIsOpen, data }) => {
                 <div className={styles["wrapper-column"]}>
                   <div className={styles["wrapper-div"]}>
                     <span>Origin:</span>
-                    <div>{origin.name}</div>
+                    <div>{originName}</div>
                   </div>
                   <div className={styles["wrapper-div"]}>
                     <span>Location:</span>
-                    <div>{location.name}</div>
+                    <div>{locationName}</div>
                   </div>
                   <div className={styles["wrapper-div"]}>
                     <span>Gender:</span>
